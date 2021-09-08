@@ -32,8 +32,6 @@ public class BenchServiceImpl implements BenchService {
             totalCount = benchPage.getTotalCount();
         }
 
-        System.out.println("size[" + transactions.size() + "]");
-
         if (transactions.size() != totalCount) {
             throw new Exception("Totals are incorrect");
         }

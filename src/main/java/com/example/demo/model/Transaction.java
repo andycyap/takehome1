@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
+import java.math.BigDecimal;
+
 
 public class Transaction {
 
@@ -10,7 +12,7 @@ public class Transaction {
     @JsonProperty("Ledger")
     private String ledger;
     @JsonProperty("Amount")
-    private double amount;
+    private BigDecimal amount;
     @JsonProperty("Company")
     private String company;
 
@@ -30,11 +32,11 @@ public class Transaction {
         this.ledger = ledger;
     }
 
-    public double getAmount() {
+    public BigDecimal getAmount() {
         return amount;
     }
 
-    public void setAmount(double amount) {
+    public void setAmount(BigDecimal amount) {
         this.amount = amount;
     }
 
